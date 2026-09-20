@@ -2,8 +2,14 @@
   hosts: servers
   become: true
 
+  vars:
+    packages:
+      - git
+      - vim
+      - curl
+
   tasks:
     - name: ensure Git is installed
       ansible.builtin.dnf:
-        name: git
+        name: "{{ packages }}"
         state: present
