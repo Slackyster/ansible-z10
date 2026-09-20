@@ -1,0 +1,9 @@
+- name: configure z10
+  hosts: servers
+  become: true
+
+  tasks:
+    - name: ensure Git is installed
+      ansible.builtin.dnf:
+        name: git
+        state: present
