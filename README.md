@@ -1,4 +1,4 @@
-#Z10 Ansible
+## Z10 Ansible
 
 Ansible configuration for the z10 fedora server.
 
@@ -10,7 +10,6 @@ Ansible configuration for the z10 fedora server.
 
 - Git
 
-##
+## bash
 
-bash
 ansible-playbook -i inventory.ini site.yml --ask-become-pass
