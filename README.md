@@ -9,6 +9,8 @@ Ansible configuration for the z10 fedora server.
 #Current configuration
 
 - Git
+- cur
+- vim
 
 ## bash
 
