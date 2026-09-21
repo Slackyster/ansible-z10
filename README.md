@@ -13,5 +13,6 @@ Ansible configuration for the z10 fedora server.
 - vim
 
 ## bash
-
+```bash
 ansible-playbook -i inventory.ini site.yml --ask-become-pass
+```
